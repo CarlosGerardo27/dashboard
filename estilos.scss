@@ -65,3 +65,41 @@ body{
   .slider.round:before {
     border-radius: 50%;
   }
+  /* Dashboard body */
+
+  .wrapper{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .header{
+    display: flex;
+    width: 100%;
+    .title{
+      width: 50%;
+    }
+    .dm-container{
+      justify-content: flex-end;
+      width: 50%;
+      display: flex;
+      p{
+        width: 100px;
+      }
+      .toggle{
+        width: 70px;
+      }
+    }
+  }
+
+
+
+.dashboard-maincards{
+  display: flex;
+  .data-container{
+    width: 30%;
+    background-color: #252b43;
+    margin: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
