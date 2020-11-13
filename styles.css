@@ -1,6 +1,7 @@
 body {
   background-color: #20222f;
   color: white;
+  font-family: "Inter", sans-serif;
 }
 
 /* Control deslizante / toggle switch */
@@ -64,6 +65,27 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+/* text styles */
+.tb {
+  font-weight: 700;
+}
+
+.tn {
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+p {
+  font-size: 14px;
+}
+
+span {
+  font-size: 14px;
+}
+
 /* Dashboard body */
 .wrapper {
   width: 80%;
@@ -74,17 +96,21 @@ input:checked + .slider:before {
   display: flex;
   width: 100%;
 }
+
 .header .title {
   width: 50%;
 }
+
 .header .dm-container {
   justify-content: flex-end;
   width: 50%;
   display: flex;
 }
+
 .header .dm-container p {
   width: 100px;
 }
+
 .header .dm-container .toggle {
   width: 70px;
 }
@@ -92,6 +118,7 @@ input:checked + .slider:before {
 .dashboard-maincards {
   display: flex;
 }
+
 .dashboard-maincards .data-container {
   width: 30%;
   background-color: #252b43;
@@ -99,5 +126,8 @@ input:checked + .slider:before {
   text-align: center;
   padding-bottom: 10px;
 }
+
+/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=estilos.scss.map */
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,105 +1,133 @@
-body{
-    background-color: #20222f;
-    color: white;
+body {
+  background-color: #20222f;
+  color: white;
+  font-family: 'Inter', sans-serif;
 }
-
 
 /* Control deslizante / toggle switch */
-
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-  }
-
-  .switch input { 
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-
-  input:checked + .slider {
-    background-color: #2196F3;
-  }
-
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
-
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
-
-  /* Rounded sliders */
-.slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
-  /* Dashboard body */
-
-  .wrapper{
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .header{
-    display: flex;
-    width: 100%;
-    .title{
-      width: 50%;
-    }
-    .dm-container{
-      justify-content: flex-end;
-      width: 50%;
-      display: flex;
-      p{
-        width: 100px;
-      }
-      .toggle{
-        width: 70px;
-      }
-    }
-  }
-
-
-
-.dashboard-maincards{
-  display: flex;
-  .data-container{
-    width: 30%;
-    background-color: #252b43;
-    margin: 10px;
-    text-align: center;
-    padding-bottom: 10px;
-  }
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* text styles */
+
+.tb{
+font-weight: 700;
+}
+
+.tn{
+  font-weight: 400;
+}
+
+h2{
+  font-size: 35px;
+}
+
+p{
+  font-size: 14px;
+}
+
+span{
+  font-size: 14px;
+}
+
+/* Dashboard body */
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+}
+
+.header .title {
+  width: 50%;
+}
+
+.header .dm-container {
+  justify-content: flex-end;
+  width: 50%;
+  display: flex;
+}
+
+.header .dm-container p {
+  width: 100px;
+}
+
+.header .dm-container .toggle {
+  width: 70px;
+}
+
+.dashboard-maincards {
+  display: flex;
+}
+
+.dashboard-maincards .data-container {
+  width: 30%;
+  background-color: #252b43;
+  margin: 10px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
+
+/*# sourceMappingURL=estilos.scss.map */
