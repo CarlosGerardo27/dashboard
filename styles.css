@@ -75,7 +75,8 @@ input:checked + .slider:before {
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 50px;
+  line-height: 0px;
 }
 
 p {
@@ -84,6 +85,21 @@ p {
 
 span {
   font-size: 14px;
+}
+
+.sub {
+  letter-spacing: 3px;
+  margin-top: -15px;
+  color: #5B627F;
+  text-transform: uppercase;
+}
+
+.stats {
+  color: #1db489;
+}
+
+.stats-down {
+  color: #dc414c;
 }
 
 /* Dashboard body */
@@ -119,12 +135,33 @@ span {
   display: flex;
 }
 
+/* socialmedia maincards */
 .dashboard-maincards .data-container {
   width: 30%;
   background-color: #252b43;
   margin: 10px;
   text-align: center;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.dashboard-maincards .data-container span img {
+  position: relative;
+  top: -2px;
+}
+
+.facebook {
+  border-top: solid 4px #198ff5;
+}
+
+.twitter {
+  border-top: solid 4px #198ff5;
+}
+
+/* .instagram{
+
+} */
+.youtube {
+  border-top: solid 4px #198ff5;
 }
 
 /*# sourceMappingURL=styles.css.map */

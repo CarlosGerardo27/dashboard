@@ -76,7 +76,8 @@ font-weight: 700;
 }
 
 h2{
-  font-size: 35px;
+  font-size: 50px;
+  line-height: 0px;
 }
 
 p{
@@ -85,6 +86,21 @@ p{
 
 span{
   font-size: 14px;
+}
+
+.sub{
+  letter-spacing: 3px;
+  margin-top:-15px;
+  color: #5B627F;
+  text-transform: uppercase;
+}
+
+.stats{
+  color: hsl(163, 72%, 41%);
+}
+
+.stats-down{
+  color: hsl(356, 69%, 56%);
 }
 
 /* Dashboard body */
@@ -120,13 +136,40 @@ span{
   display: flex;
 }
 
+/* socialmedia maincards */
+
 .dashboard-maincards .data-container {
   width: 30%;
   background-color: #252b43;
   margin: 10px;
   text-align: center;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  span{
+    img{
+      position: relative;
+      top: -2px;
+    }
+  } 
 }
+
+.facebook{
+  border-top: solid 4px hsl(208, 92%, 53%)
+}
+
+.twitter{
+  border-top: solid 4px hsl(208, 92%, 53%)
+}
+
+/* .instagram{
+
+} */
+
+.youtube{
+  border-top: solid 4px hsl(208, 92%, 53%)
+}
+
+
 
 /*# sourceMappingURL=styles.css.map */
 
