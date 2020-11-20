@@ -25,7 +25,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background: linear-gradient(45deg, #378EE6, #3EDA81)100%;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -37,7 +37,7 @@ body {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: #252B43;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -54,6 +54,7 @@ input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
+  background-color: white;
 }
 
 /* Rounded sliders */
@@ -181,23 +182,29 @@ span{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 1rem;
+  margin-bottom: 4rem;
   .overview__card{
     background-color: #252b43;
+    height: 120px;
     figure{
       display: flex;
       justify-content: space-between;
       margin: 0 auto;
       padding-top: 1.5rem;
       width: 90%;
+      color: #5B627F;
     }
     div{
       display: flex;
       justify-content: space-between;
       margin: 0 auto;
       width: 90%;
+      h4{
+        font-size: 25px;
+      }
       p{
         position: relative;
-        top: .5rem;
+        top: 1.5rem;
         img{
           position: relative;
           top: -3px;
