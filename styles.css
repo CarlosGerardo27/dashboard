@@ -4,8 +4,55 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.bright-mode {
+  background-color: white !important;
+}
+
+.dark-mode {
+  background-color: #20222f;
+}
+
 /* Control deslizante / toggle switch */
-.switch {
+.checkbox {
+  width: 75px;
+  height: 30px;
+  border-radius: 13px;
+  background: linear-gradient(45deg, #378EE6, #3EDA81) 100%;
+  position: relative;
+  top: 7px;
+  z-index: 0;
+}
+
+.status {
+  width: 35px;
+  height: 35px;
+  background: #171822;
+  border-radius: 360px;
+  position: relative;
+  top: -3px;
+  z-index: 2;
+  box-shadow: #323342 0px 0px 5px;
+}
+
+.slider {
+  animation: activate linear 500ms;
+}
+
+@keyframes activate {
+  0% {
+    transform: translateX(10px);
+  }
+  20% {
+    transform: translateX(30px);
+  }
+  40% {
+    transform: translateX(40px);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
+/* .switch {
   position: relative;
   display: inline-block;
   width: 60px;
@@ -25,7 +72,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, #378EE6, #3EDA81) 100%;
+  background: linear-gradient(45deg, #378EE6, #3EDA81)100%;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -58,14 +105,13 @@ input:checked + .slider:before {
 }
 
 /* Rounded sliders */
-.slider.round {
+/* .slider.round {
   border-radius: 34px;
 }
 
 .slider.round:before {
   border-radius: 50%;
-}
-
+}  */
 /* text styles */
 .tb {
   font-weight: 700;

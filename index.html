@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -14,20 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
-    <title>Frontend Mentor | [Challenge Name Here]</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <title>Social Media Dashboard Dark Mode</title>
   </head>
-  <body class="dark-mode">
+  <body class="dark-mode" id="wrapper1">
     <div class="wrapper">
       <section class="socialmedia">
         <div class="header">
@@ -35,18 +23,22 @@
             <h1>Social Media Dashboard</h1>
             <p>Total Followers: 23,004</p>
           </div>
+          <!-- Slider -->
           <div class="dm-container">
             <p>Dark mode</p>
-            <div class="toggle">
+            <div class="checkbox" id="toggle">
+              <div class="status" id="slider1"></div>
+            </div>
+<!--             <div class="toggle">
               <label class="switch">
-                <input type="checkbox" />
+                <input type="checkbox" id="toggle1"/>
                 <span class="slider round"></span>
-              </label>
+              </label> -->
             </div>
           </div>
         </div>
         <!-- Tarjetas redes sociales -->
-        <div class="dashboard-maincards">
+        <div class="dashboard-maincards lm">
           <div class="data-container facebook">
             <figure>
               <img src="images/icon-facebook.svg" alt="facebook" />
@@ -185,5 +177,6 @@
           </div>
         </div>
       </section>
+      <script src="main.js"></script>
   </body>
 </html>
