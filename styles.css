@@ -325,5 +325,60 @@ span {
 
 /*# sourceMappingURL=styles.css.map */
 /*# sourceMappingURL=estilos.scss.map */
+@media only screen and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+  .header .title {
+    width: 100%;
+  }
+  .header .title h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .header .title p {
+    font-size: 30px;
+  }
+  .header .dm-container {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .header .dm-container p {
+    width: auto;
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .header .dm-container .checkbox {
+    position: relative;
+    top: 20px;
+  }
+
+  .dashboard-maincards {
+    display: flex;
+    flex-direction: column;
+  }
+  .dashboard-maincards .data-container {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    width: 89%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .overview {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
