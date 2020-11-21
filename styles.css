@@ -2,10 +2,32 @@ body {
   background-color: #20222f;
   color: white;
   font-family: "Inter", sans-serif;
+  transition: 0.3s;
 }
 
 .bright-mode {
   background-color: white !important;
+}
+.bright-mode h1 {
+  color: black !important;
+}
+.bright-mode h2 {
+  color: black !important;
+}
+.bright-mode .tn {
+  color: #63687e;
+}
+.bright-mode h4 {
+  color: black;
+}
+.bright-mode .status {
+  background-color: #F2F1FB;
+}
+.bright-mode .title p {
+  color: black;
+}
+.bright-mode .dm-container p {
+  color: black;
 }
 
 .dark-mode {
@@ -15,6 +37,11 @@ body {
 /* Bright mode */
 .bm {
   background-color: #F0F3FA !important;
+}
+
+.bm:hover {
+  background-color: white !important;
+  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.938);
 }
 
 /* Control deslizante / toggle switch */
@@ -220,10 +247,16 @@ span {
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 5px;
+  transition: 0.4s;
 }
 .dashboard-maincards .data-container span img {
   position: relative;
   top: -2px;
+}
+
+.data-container:hover {
+  background-color: rgba(62, 69, 96, 0.637);
+  transform: scale(1.1);
 }
 
 .facebook {
@@ -257,6 +290,7 @@ span {
 .overview .overview__card {
   background-color: #252b43;
   height: 120px;
+  transition: 0.4s;
 }
 .overview .overview__card figure {
   display: flex;
@@ -282,6 +316,11 @@ span {
 .overview .overview__card div p img {
   position: relative;
   top: -3px;
+}
+
+.overview__card:hover {
+  background-color: rgba(62, 69, 96, 0.637);
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=styles.css.map */
