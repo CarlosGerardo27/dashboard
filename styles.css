@@ -12,6 +12,11 @@ body {
   background-color: #20222f;
 }
 
+/* Bright mode */
+.bm {
+  background-color: #F0F3FA !important;
+}
+
 /* Control deslizante / toggle switch */
 .checkbox {
   width: 75px;
@@ -35,7 +40,17 @@ body {
 }
 
 .slider {
-  animation: activate linear 500ms;
+  animation-name: activate;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.slider2 {
+  animation-name: desactivate;
+  animation-duration: 700ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
 
 @keyframes activate {
@@ -50,6 +65,20 @@ body {
   }
   100% {
     transform: translateX(50px);
+  }
+}
+@keyframes desactivate {
+  0% {
+    transform: translateX(-1px);
+  }
+  20% {
+    transform: translateX(-5px);
+  }
+  40% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(-15px);
   }
 }
 /* .switch {
